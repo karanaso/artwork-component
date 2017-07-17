@@ -14,8 +14,6 @@ import './ArtworksContainer.scss';
 
 const mapStateToProps = (state) => {
   const values = _.values(state);
-
-  //no Need to add this to reducer as it is
   const acknowledgedItems = values.filter( item => item.acknowledged === true).length;
   return {
     items: values,
@@ -27,12 +25,12 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     acknowledge: (id) => {
-      dispatch(Actions.acknowledged(id))
+      dispatch(Actions.acknowledged(id));
     }
   }
 }
 
-class MainComponent extends React.Component {
+export class ArtworksContainer extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -65,5 +63,5 @@ class MainComponent extends React.Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainComponent)
+export default connect(mapStateToProps, mapDispatchToProps)(ArtworksContainer)
 
