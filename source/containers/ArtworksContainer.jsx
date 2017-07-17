@@ -10,7 +10,7 @@ import MinutesAgo from '../components/MinutesAgo/MinutesAgo';
 import MarkAsSeen from '../components/MarkAsSeen/MarkAsSeen';
 import ButtonBell from '../components/ButtonBell/ButtonBell';
 import Actions from '../store/Actions';
-import './ArtworksComponent.scss';
+import './ArtworksContainer.scss';
 
 const mapStateToProps = (state) => {
   const values = _.values(state);

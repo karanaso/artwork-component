@@ -7,7 +7,7 @@ import ArtWorksCompomnentReducer from './store/ActionsReducer';
 import ActionTypes from './store/ActionTypes';
 
 import Layout from './containers/Layout';
-import ArtworksComponent from './containers/ArtworksComponent';
+import ArtworksContainer from './containers/ArtworksContainer';
 
 let store = createStore(ArtWorksCompomnentReducer);
 window.store=store;
@@ -21,7 +21,7 @@ export default class App extends React.Component {
     return(
       <Provider store={store}>
         <Layout>
-          <Route path="/" component={ArtworksComponent} />
+          <Route path="/" component={ArtworksContainer} />
         </Layout>
       </Provider>
     )
