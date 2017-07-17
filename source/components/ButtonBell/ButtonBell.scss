@@ -1,0 +1,16 @@
+@import '../../scss/variables.scss';
+
+.ButtonBell {
+  // background-image: url('../../assets/alarm.png');
+  text-align: right;
+  padding:12px; 
+  border-radius: 4px;
+
+  &.active {
+    background-color: $nameColor
+  }
+
+  &.inactive {
+    background-color: $LightGrey;
+  }
+}
