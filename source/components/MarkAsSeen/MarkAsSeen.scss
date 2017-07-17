@@ -1,0 +1,15 @@
+@import '../../scss/variables.scss';
+
+a.MarkAsSeen {
+  margin:8px;
+  cursor: pointer;
+  
+  &.active {
+   color: $MarkAsSeenAction;
+  }
+
+  &.inactive {
+   display:none;
+  }
+}
+
