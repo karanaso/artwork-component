@@ -1,0 +1,29 @@
+.artworks-component {
+  position: relative;
+  font-size:1.2em;
+  width:100%;
+  
+
+  & .left-col {
+    display: inline-block;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  & .right-col {
+    display: inline-block;
+    width: 79%;
+    vertical-align: top;
+  }
+
+  & .split div {
+    display: inline-block;
+    width:auto;
+  }
+
+  hr {
+    border-top:2px dashed #d8d9d9;
+  }
+}
+
