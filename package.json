@@ -1,0 +1,85 @@
+{
+  "name": "Artworks-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/webpack/bin/webpack.js",
+    "dev": "node server.js",
+    "test": "node_modules/jest/bin/jest.js",
+    "test-w": "node_modules/jest/bin/jest.js --watchAll --verbose",
+    "style": "eslint source/**/*.js",
+    "style-fix": "eslint --fix source/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.0.36",
+    "@types/react-router": "^4.0.3",
+    "@types/sinon": "^2.3.2",
+    "@types/uuid": "^2.0.29",
+    "@types/webpack-hot-middleware": "^2.15.0",
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.0.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "sinon": "^2.3.8",
+    "uuid": "^3.0.1",
+    "webpack-dev-middleware": "^1.11.0",
+    "webpack-hot-middleware": "^2.18.2"
+  },
+  "devDependencies": {
+    "@types/babel-core": "^6.7.14",
+    "@types/jest": "^20.0.2",
+    "@types/webpack": "^2.2.14",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-airbnb": "^2.2.3",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.9.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
+    "jsdom": "^9.12.0",
+    "node-sass": "^4.5.3",
+    "precss": "^2.0.0",
+    "react-test-renderer": "^15.6.1",
+    "redux-mock-store": "^1.2.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.3.3"
+  },
+  "jest": {
+    "verbose": true,
+    "testMatch": [
+      "__tests__/**/*.js",
+      "**/?(*.)(spec|test).js?(x)"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "^.+\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
+}
