@@ -6,7 +6,9 @@
   "scripts": {
     "build": "node_modules/webpack/bin/webpack.js",
     "dev": "node server.js",
-    "test": "node_modules/jest/bin/jest.js",
+    "test": "npm run test-unit && npm run test-ui",
+    "test-unit": "node_modules/jest/bin/jest.js",
+    "test-ui": "node_modules/webdriverio/bin/wdio",
     "test-w": "node_modules/jest/bin/jest.js --watchAll --verbose",
     "style": "eslint source/**/*.js",
     "style-fix": "eslint --fix source/**/*.js"
@@ -35,6 +37,7 @@
   },
   "devDependencies": {
     "@types/babel-core": "^6.7.14",
+    "@types/cucumber": "^2.0.1",
     "@types/jest": "^20.0.2",
     "@types/webpack": "^2.2.14",
     "babel-core": "^6.24.0",
@@ -44,6 +47,7 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
     "css-loader": "^0.28.4",
+    "cucumber": "^2.3.1",
     "enzyme": "^2.9.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
@@ -60,6 +64,10 @@
     "redux-mock-store": "^1.2.3",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
+    "wdio-cucumber-framework": "^0.3.1",
+    "wdio-dot-reporter": "0.0.8",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "webdriverio": "^4.8.0",
     "webpack": "^2.3.3"
   },
   "jest": {
