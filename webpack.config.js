@@ -26,6 +26,10 @@ module.exports = {
         loader  : 'url-loader?limit=30000&name=images/[name].[ext]'
     },
     {
+      test: /\.png$/,
+      loader: 'file-loader'
+    },
+    {
       test: /\.scss$/,
       exclude: /node_modules/,
       use: [
