@@ -1,4 +1,4 @@
-import Actions from '../../../source/store/Actions';
+import Actions from '../../../../../source/store/Actions';
 
 describe('Actions', () => {
   test('Actions.acknowledged should proper oject', () => {

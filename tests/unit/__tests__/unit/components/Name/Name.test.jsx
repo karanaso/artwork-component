@@ -1,20 +1,20 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Name from '../../../../source/components/Name/Name';
+import Name from '../../../../../../source/components/Name/Name';
 
-describe('<Name/>', function () {
-  it('should have one div element', function () {
+describe('<Name/>', () => {
+  it('should have one div element', () => {
     const wrapper = shallow(<Name />);
     expect(wrapper.find('div')).toHaveLength(1);
   });
 
-  it('should have className="name"', function () {
+  it('should have className="name"', () => {
     const wrapper = shallow(<Name />);
     expect(wrapper.find('div').prop('className')).toEqual('name');
   });
 
-  it('should have text="hello world"', function () {
+  it('should have a div with text "Sotirios Karanasios"', () => {
     const first_name = 'Sotirios';
     const last_name = 'Karanasios';
     const wrapper = shallow(<Name first_name={first_name} last_name={last_name}/>);

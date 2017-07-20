@@ -1,4 +1,4 @@
-import ActionTypes from '../../../source/store/ActionTypes';
+import ActionTypes from '../../../../../source/store/ActionTypes';
 
 describe('ActionTypes', () => {
   test('ActionTypes.ACKNOWLEDGED should return "ACKNOWLEDGED"', () => {

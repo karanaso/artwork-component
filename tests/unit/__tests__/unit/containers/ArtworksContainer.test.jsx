@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
-import ArtworksContainer from '../../../source/containers/ArtworksContainer';
+import ArtworksContainer from '../../../../../source/containers/ArtworksContainer';
 
 describe('ArtworksContainer', () => {
   let container;

@@ -1,4 +1,4 @@
-import ActionsReducer from '../../../source/store/ActionsReducer';
+import ActionsReducer from '../../../../../source/store/ActionsReducer';
 
 describe('ActionsReducer', () => {
   test('ActionsReducer acknowledge action should return acknowledged oject', () => {

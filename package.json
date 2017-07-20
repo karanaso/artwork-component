@@ -8,8 +8,8 @@
     "dev": "node server.js",
     "test": "npm run test-unit && npm run test-ui",
     "test-unit": "node_modules/jest/bin/jest.js",
+    "test-unit-w": "node_modules/jest/bin/jest.js --watchAll --verbose",
     "test-ui": "node_modules/webdriverio/bin/wdio",
-    "test-w": "node_modules/jest/bin/jest.js --watchAll --verbose",
     "style": "eslint source/**/*.js",
     "style-fix": "eslint --fix source/**/*.js"
   },
@@ -73,7 +73,7 @@
   "jest": {
     "verbose": true,
     "testMatch": [
-      "__tests__/**/*.js",
+      "tests/__tests__/unit/**/*.js",
       "**/?(*.)(spec|test).js?(x)"
     ],
     "moduleFileExtensions": [
@@ -85,7 +85,7 @@
     ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "^.+\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
+      "^.+\\.(css|less|scss)$": "<rootDir>/tests/unit/__mocks__/styleMock.js"
     }
   }
 }
