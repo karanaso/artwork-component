@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const buildDirectory = './build/';
 module.exports = {
   entry: [
+    'babel-polyfill',
     './source/Index.jsx',
     'webpack-hot-middleware/client?http://localhost:3000'
   ],
